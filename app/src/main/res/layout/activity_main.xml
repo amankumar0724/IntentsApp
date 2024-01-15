@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:id="@+id/homeScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnDark"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C1A5A9"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/dark_mode" />
+
+        <Button
+            android:id="@+id/btnLight"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C1A5A9"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/light_mode" />
+
+        <ScrollView
+            android:layout_marginTop="30dp"
+            android:layout_width="340dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/before_you_get_started_with_the_app_development_process_you_need_to_plan_it_the_more_thorough_you_are_at_this_stage_the_easier_the_rest_of_the_mobile_app_development_process_will_become_since_you_are_reading_this_article_you_probably_have_a_good_idea_about_the_type_of_mobile_app_you_want_to_create_this_is_great_news_because_it_means_you_can_start_thinking_about_the_app_in_more_detail" />
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/openCamera"
+            android:layout_marginTop="20dp"
+            android:layout_width="228dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="#C1A5BF"
+            android:layout_height="150dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/camera" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/openLeetcode"
+            android:layout_marginTop="20dp"
+            android:layout_width="228dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="#C1A5BF"
+            android:layout_height="150dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/leetcode" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nextPage"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"
+                android:text="@string/next"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

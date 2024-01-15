@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IntentsApp</string>
+    <string name="before_you_get_started_with_the_app_development_process_you_need_to_plan_it_the_more_thorough_you_are_at_this_stage_the_easier_the_rest_of_the_mobile_app_development_process_will_become_since_you_are_reading_this_article_you_probably_have_a_good_idea_about_the_type_of_mobile_app_you_want_to_create_this_is_great_news_because_it_means_you_can_start_thinking_about_the_app_in_more_detail.">Before you get started with the app development process, you need to plan it. The more thorough you are at this stage, the easier the rest of the mobile app development process will become. Since you are reading this article, you probably have a good idea about the type of mobile app you want to create. This is great news because it means you can start thinking about the app in more detail.</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="before_you_get_started_with_the_app_development_process_you_need_to_plan_it_the_more_thorough_you_are_at_this_stage_the_easier_the_rest_of_the_mobile_app_development_process_will_become_since_you_are_reading_this_article_you_probably_have_a_good_idea_about_the_type_of_mobile_app_you_want_to_create_this_is_great_news_because_it_means_you_can_start_thinking_about_the_app_in_more_detail">Before you get started with the app development process, you need to plan it. The more thorough you are at this stage, the easier the rest of the mobile app development process will become. Since you are reading this article, you probably have a good idea about the type of mobile app you want to create. This is great news because it means you can start thinking about the app in more detail.</string>
+    <string name="leetcode">Leetcode</string>
+    <string name="camera">Camera</string>
+    <string name="next">Next</string>
+    <string name="todo1">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="developer">Developer</string>
+    <string name="developer_s_github">Developer\'s Github</string>
+</resources>
