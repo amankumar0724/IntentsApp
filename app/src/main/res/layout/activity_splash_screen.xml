@@ -5,4 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SplashScreen"/>
+    android:background="@color/black"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="306dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:layout_height="314dp"
+        app:srcCompat="@drawable/splash"
+        android:contentDescription="@string/w" />
+</LinearLayout>

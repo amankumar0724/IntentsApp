@@ -15,7 +15,7 @@
         android:theme="@style/Theme.IntentsApp"
         tools:targetApi="31">
         <activity
-            android:name=".SplashScreen"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".WebViewThirdScr"
@@ -24,7 +24,7 @@
             android:name=".SecondScreen"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
