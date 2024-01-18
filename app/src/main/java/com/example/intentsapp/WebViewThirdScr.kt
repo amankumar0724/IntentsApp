@@ -23,11 +23,18 @@ class WebViewThirdScr : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     @SuppressLint("SetJavaScriptEnabled")
     private fun webViewSetUp(webView:WebView){
+        val githubUsername = intent.getStringExtra("GithubID")
         webView.webViewClient = WebViewClient()
         webView.apply {
             settings.javaScriptEnabled = true
             settings.safeBrowsingEnabled = true
-            loadUrl("https://github.com/amankumar0724")
+            val url_ = "https://github.com/"+"$githubUsername"
+            loadUrl(url_)
         }
+//        webView.apply {
+//            settings.javaScriptEnabled = true
+//            settings.safeBrowsingEnabled = true
+//            loadUrl("https://developer.android.com/get-started/overview")
+//        }
     }
 }
