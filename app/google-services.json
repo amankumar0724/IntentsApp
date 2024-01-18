@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343229883326",
+    "project_id": "intentsapp-f5e1d",
+    "storage_bucket": "intentsapp-f5e1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343229883326:android:c37f7b095604c3cc8ecfef",
+        "android_client_info": {
+          "package_name": "com.example.intentsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh9NSC95JWIYe1liLYFToqA0su8SRY2w4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

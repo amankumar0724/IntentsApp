@@ -32,4 +32,10 @@
     <string name="about">About</string>
     <string name="Dark">Dark</string>
     <string name="w">TODO</string>
+    <string name="second_name">Second Name</string>
+    <string name="github_username">Github username</string>
+    <string name="first_name">First Name</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="enrollment_number">Enrollment Number</string>
 </resources>

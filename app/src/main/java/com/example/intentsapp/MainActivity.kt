@@ -10,34 +10,53 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
     @SuppressLint("ResourceType", "MissingInflatedId")
-//    creating key
+    //    creating key
     companion object{
         const val KEY = "com.example.intentsapp.MainActivity.KEY"
     }
-
-    @SuppressLint("MissingInflatedId")
+    lateinit var database : DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val proceed = findViewById<Button>(R.id.proceed)
+        val rollNo = findViewById<EditText>(R.id.sname)
         val fname = findViewById<EditText>(R.id.fname)
         val githubUsername = findViewById<EditText>(R.id.githubUsername)
+//        firebase
         proceed.setOnClickListener{
-            val welcome = "Welcome"+' '+ fname.text.toString() + '!'
+            val name = fname.text.toString()
+            val roll = rollNo.text.toString()
             val github = githubUsername.text.toString()
+
+            val user = User(name,roll,github)
+            database = FirebaseDatabase.getInstance().getReference("Users")
+            database.child(roll).setValue(user).addOnSuccessListener {
+                fname.text?.clear()
+                rollNo.text?.clear()
+                githubUsername.text?.clear()
+                Toast.makeText(this,"Data saved",Toast.LENGTH_SHORT).show()
+            }
+
+            val welcome = "Welcome"+' '+ fname.text.toString() + '!'
             intent = Intent(this,SecondScreen::class.java)
             intent.putExtra(KEY,welcome)
             intent.putExtra("githubID",github)
             startActivity(intent)
         }
+
+
+
 
 
 //        val homeScreen = findViewById<LinearLayout>(R.id.homeScreen)

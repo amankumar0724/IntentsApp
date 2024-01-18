@@ -36,7 +36,7 @@ class SecondScreen : AppCompatActivity() {
         GIThub.setOnClickListener{
             val githubUsername = intent.getStringExtra("githubID")
             intent = Intent(this,WebViewThirdScr::class.java)
-            intent.putExtra("ID1",githubUsername)
+            intent.putExtra("Git",githubUsername)
             intent.putExtra("ID1","id1")
             startActivity(intent)
         }

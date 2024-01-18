@@ -25,7 +25,7 @@ class WebViewThirdScr : AppCompatActivity() {
     private fun webViewSetUp(webView:WebView){
         val Switch_ = intent.getStringExtra("ID1")
         if(Switch_ == "id1"){
-            val githubUsername = intent.getStringExtra("ID1")
+            val githubUsername = intent.getStringExtra("Git")
             webView.webViewClient = WebViewClient()
             webView.apply {
                 settings.javaScriptEnabled = true
